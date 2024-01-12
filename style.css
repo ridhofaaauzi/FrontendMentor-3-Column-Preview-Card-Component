@@ -1,0 +1,182 @@
+/* Lexend Deca */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/* Big Shoulders Display */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10rem;
+}
+
+.container .card:nth-child(1) {
+  width: 600px;
+  height: 550px;
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+  padding: 2rem;
+}
+
+.container .card:nth-child(2) {
+  width: 600px;
+  height: 550px;
+  background-color: hsl(184, 100%, 22%);
+  padding: 2rem;
+}
+
+.container .card:nth-child(3) {
+  width: 600px;
+  height: 550px;
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+  padding: 2rem;
+}
+
+.container .card .card-img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.container .card .card-body h1 {
+  font-size: 42px;
+  color: hsl(0, 0%, 95%);
+  margin-bottom: 2rem;
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.container .card .card-body .card-description p {
+  width: 350px;
+  color: hsl(0, 0%, 95%);
+  line-height: 2rem;
+  margin-bottom: 6rem;
+  font-size: 15px;
+}
+
+.container .card .card-body .card-description .card-btn-orange {
+  width: 150px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  color: hsl(31, 77%, 52%);
+  font-weight: bold;
+}
+
+.container .card .card-body .card-description .card-btn-orange:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+.container .card .card-body .card-description .card-btn-cyan {
+  width: 150px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  color: hsl(184, 100%, 22%);
+  font-weight: bold;
+}
+
+.container .card .card-body .card-description .card-btn-cyan:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+.container .card .card-body .card-description .card-btn-cyan-dark {
+  width: 150px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  color: hsl(179, 100%, 13%);
+  font-weight: bold;
+}
+
+.container .card .card-body .card-description .card-btn-cyan-dark:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 1px solid hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 1024px) {
+  .container .card:nth-child(1) {
+    width: 550px;
+    height: auto;
+  }
+
+  .container .card:nth-child(2) {
+    width: 550px;
+    height: auto;
+  }
+
+  .container .card:nth-child(3) {
+    width: 550px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container .card:nth-child(1) {
+    width: 500px;
+    height: auto;
+  }
+
+  .container .card:nth-child(2) {
+    width: 500px;
+    height: auto;
+  }
+
+  .container .card:nth-child(3) {
+    width: 500px;
+    height: auto;
+  }
+
+  .container .card .card-body .card-title h1 {
+    font-size: 32px;
+  }
+
+  .container .card .card-body .card-description p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .container .card:nth-child(1) {
+    width: 300px;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .container .card:nth-child(2) {
+    width: 300px;
+  }
+
+  .container .card:nth-child(3) {
+    width: 300px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .container .card .card-body .card-description p {
+    width: 250px;
+  }
+}
